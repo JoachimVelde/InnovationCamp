@@ -3,3 +3,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 150vh;
+}
+
+#navbar-top, #navbar-bot {
+    float: left;
+    width: 50%;
+    height: 64px;
+    border-bottom: 2px solid red;
+}
+
+#navbar-top {
+    padding: 5px;
+}
+
+#navbar-top a {
+    text-decoration: none; /* Kommer liten strek ved logoen uten dette. */
+}
+
+#navbar-top img {
+    height: 100%;
+}
+
+#navbar-top p {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    line-height: 26px;
+}
+
+#navbar-bot nav, #navbar-bot ul {
+    height: 100%;
+}
+
+#navbar-bot li {
+    float: left;
+    height: 100%;
+    width: 33.333%;
+    list-style-type: none;
+}
+
+#navbar-bot a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 64px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar-bot a:hover, #navbar-bot a:focus {
+    text-decoration: underline;
+}   
+
+@media only screen and (max-width: 600px) {
+    #navbar-top, #navbar-bot {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    #navbar-bot {
+        background-color: lightgrey;
+        border-bottom: 2px solid red;
+    }
+
+    #navbar-bot a:hover, #navbar-bot a:focus {
+        background-color: grey;
+        color: white;
+        text-decoration: none;
+    }   
+}
