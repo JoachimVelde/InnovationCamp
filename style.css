@@ -17,12 +17,16 @@ body {
 
 #navbar-top, #navbar-bot {
     float: left;
-    width: 50%;
     height: 80px;
 }
 
 #navbar-top {
+    width: 65%;
     padding: 10px 5px 10px 15px;
+}
+
+#navbar-bot {
+    width: 35%;
 }
 
 #navbar-top a {
@@ -43,11 +47,6 @@ body {
 
 #navbar-bot nav, #navbar-bot ul {
     height: 100%;
-}
-
-#navbar-bot {
-    width: 35%;
-    float: right;
 }
 
 #navbar-bot li {
@@ -73,6 +72,10 @@ body {
 }   
 
 @media only screen and (max-width: 600px) {
+    #navbar-wrapper {
+        height: 160px;
+    }
+
     #navbar-top, #navbar-bot {
         display: block;
         width: 100%;
@@ -81,7 +84,7 @@ body {
 
     #navbar-bot {
         background-color: lightgrey;
-        border-bottom: 2px solid red;
+        border-bottom: 3px solid red;
     }
 
     #navbar-bot a:hover, #navbar-bot a:focus {
