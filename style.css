@@ -2,21 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     min-height: 150vh;
 }
 
+#navbar-wrapper {
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid red;
+}
+
 #navbar-top, #navbar-bot {
     float: left;
     width: 50%;
-    height: 64px;
-    border-bottom: 2px solid red;
+    height: 80px;
 }
 
 #navbar-top {
-    padding: 5px;
+    padding: 10px 5px 10px 15px;
 }
 
 #navbar-top a {
@@ -29,13 +35,19 @@ body {
 
 #navbar-top p {
     display: inline-block;
-    height: 100%;
     vertical-align: top;
     line-height: 26px;
+    height: 100%;
+    font-size: 14pt;
 }
 
 #navbar-bot nav, #navbar-bot ul {
     height: 100%;
+}
+
+#navbar-bot {
+    width: 35%;
+    float: right;
 }
 
 #navbar-bot li {
@@ -43,13 +55,14 @@ body {
     height: 100%;
     width: 33.333%;
     list-style-type: none;
+    font-size: 14pt;
 }
 
 #navbar-bot a {
     display: block;
     width: 100%;
     height: 100%;
-    line-height: 64px;
+    line-height: 80px;
     text-align: center;
     text-decoration: none;
     color: inherit;
@@ -76,4 +89,31 @@ body {
         color: white;
         text-decoration: none;
     }   
+}
+
+#content-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+#content-wrapper > h1 {
+    width: 60%;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 0;
+    border: 3px solid red;
+    border-radius: 20px;
+}
+
+#content-wrapper > .contentbox {
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 20px;
+}
+
+
+#content-wrapper > .contentspace {
+    height: 40px;
+    width: 49%;
+    border-right: 3px solid red;
 }
