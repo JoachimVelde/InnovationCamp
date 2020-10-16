@@ -74,6 +74,16 @@ body {
         height: 163px; /* 3 for border-bottom */
     }
 
+    #navbar-top {
+        display: flex;
+        justify-content: center;
+    }
+
+    #navbar-top a {
+        width: 62px;
+        margin-right: 10px;
+    }
+
     #navbar-bot {
         width: 100%;
     }
@@ -88,6 +98,7 @@ body {
 
     #navbar-bot a {
         background-color: lightgray;
+        font-size: 12pt;
     }
 
     #navbar-bot a:hover, #navbar-bot a:focus {
