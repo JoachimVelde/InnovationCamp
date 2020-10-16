@@ -73,7 +73,7 @@ body {
     #navbar-wrapper {
         height: 163px; /* 3 for border-bottom */
     }
-
+    
     #navbar-bot {
         width: 100%;
     }
@@ -101,12 +101,17 @@ body {
     width: 60%;
     margin: auto;
 }
+@media only screen and (max-width: 688px) {
+    #content-wrapper {
+        width: 90%;
+    }
+}
 
 #content-wrapper > h1 {
     width: 60%;
     text-align: center;
     margin: 30px auto;
-    padding: 20px 0;
+    padding: 20px;
     border: 3px solid red;
     border-radius: 20px;
 }
