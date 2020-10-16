@@ -16,17 +16,16 @@ body {
 }
 
 #navbar-top, #navbar-bot {
-    float: left;
     height: 80px;
+    display: inline-block;
 }
 
 #navbar-top {
-    width: 65%;
     padding: 10px 5px 10px 15px;
 }
 
 #navbar-bot {
-    width: 35%;
+    float: right;
 }
 
 #navbar-top a {
@@ -40,7 +39,7 @@ body {
 #navbar-top p {
     display: inline-block;
     vertical-align: top;
-    line-height: 26px;
+    line-height: 28px;
     height: 100%;
     font-size: 14pt;
 }
@@ -52,39 +51,43 @@ body {
 #navbar-bot li {
     float: left;
     height: 100%;
-    width: 33.333%;
     list-style-type: none;
     font-size: 14pt;
 }
 
 #navbar-bot a {
     display: block;
-    width: 100%;
     height: 100%;
     line-height: 80px;
     text-align: center;
     text-decoration: none;
     color: inherit;
+    padding: 0px 30px;
 }
 
 #navbar-bot a:hover, #navbar-bot a:focus {
     text-decoration: underline;
 }   
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 688px) {
     #navbar-wrapper {
-        height: 160px;
-    }
-
-    #navbar-top, #navbar-bot {
-        display: block;
-        width: 100%;
-        border: none;
+        height: 163px; /* 3 for border-bottom */
     }
 
     #navbar-bot {
-        background-color: lightgrey;
-        border-bottom: 3px solid red;
+        width: 100%;
+    }
+
+    #navbar-bot ul {
+        display: flex;
+    }
+
+    #navbar-bot li {
+        flex: 1;
+    }
+
+    #navbar-bot a {
+        background-color: lightgray;
     }
 
     #navbar-bot a:hover, #navbar-bot a:focus {
