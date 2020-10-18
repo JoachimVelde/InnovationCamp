@@ -98,7 +98,7 @@ body {
 
     #navbar-bot a {
         background-color: lightgray;
-        font-size: 12pt;
+        padding: 0;
     }
 
     #navbar-bot a:hover, #navbar-bot a:focus {
@@ -138,4 +138,11 @@ body {
     height: 40px;
     width: 49%;
     border-right: 3px solid red;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
