@@ -5,15 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    
-}
-
 footer {
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 3px solid red;
+    margin-top: 30px;
 }
 
 #navbar-wrapper {
@@ -119,6 +117,7 @@ footer {
 }
 
 #content-wrapper {
+    min-height: calc(100vh - 83px - 200px - 60px); /* Plasserer footer på bunn. 200 er footer og 60 er margin*/
     width: 60%;
     margin: auto;
 }
@@ -178,6 +177,11 @@ footer {
 }
 
 /* CONTACT.HTML */
+.contact-page-wrapper {
+    min-height: calc(100vh - 83px - 200px - 60px); /* Plasserer footer på bunn. 200 er footer og 60 er margin*/
+
+}
+
 .contact-wrapper,
 .contact-header {
     width: 40%;
