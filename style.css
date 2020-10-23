@@ -6,12 +6,26 @@
 }
 
 footer {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-top: 3px solid red;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+footer a {
+    display: block;
 }
 
 #navbar-wrapper {
